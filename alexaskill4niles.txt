@@ -7,9 +7,12 @@ pi.json in this directory.
 This project requires detailed knowledge over a number of disciplines, and has a medium level of complexity.  If you have no experience writing amazon 
 skills, there is an excellent tutorial that you should complete at the following URL:
 
-              https://tutorials-raspberrypi.com/wp-content/uploads/Eigenen-Raspberry-Pi-Alexa-Skill-entwickeln-und-Pi-fernsteuern-1024x682.jpg
-
-Once you've done that, you'll be ready to attempt this project.  Substitute my pi.json file for his, and my alexaskill.py file for his and you should be in business.
+              https://tutorials-raspberrypi.com/develop-your-own-raspberry-pi-alexa-skill-and-control-pi-remotely/
+              
+In case the URL becomes stale, you can find the tutorial by searching for "Develop Your Own Raspberry Pi Alexa Skill and Control Pi Remotely."
+              
+Once you've completed the tutorial, you'll be ready to attempt this project.  Substitute my pi.json file for the one in the alexa skill you built, 
+and then run my alexaskill.py file and you should be in business.
 
 Some interesting facts about the Niles GXR2::
 
