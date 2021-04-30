@@ -11,8 +11,8 @@ skills, there is an excellent tutorial that you should complete at the following
               
 In case the URL becomes stale, you can find the tutorial by searching for "Develop Your Own Raspberry Pi Alexa Skill and Control Pi Remotely."
               
-Once you've completed the tutorial, you'll be ready to attempt this project.  Substitute my pi.json file for the one in the alexa skill you built, 
-and then run my alexaskill.py file and you should be in business.
+Once you've completed the tutorial, you'll be ready to attempt this project.  Copy and paste the pi.json file from this repository into the alexa skill you built, 
+and then run the nilespi.py file from this repository on your raspberry pi.
 
 Some interesting facts about the Niles GXR2::
 
