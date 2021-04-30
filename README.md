@@ -1,1 +1,1 @@
-# Alexa-app-for-controlling-Niles-GXR2
+# Alexa-skill-for-Niles-GXR2
