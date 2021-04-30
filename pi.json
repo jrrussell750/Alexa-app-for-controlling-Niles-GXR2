@@ -1,0 +1,254 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "niles pi",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "setintent",
+                    "slots": [
+                        {
+                            "name": "zone",
+                            "type": "ZONE"
+                        },
+                        {
+                            "name": "input",
+                            "type": "INPUT"
+                        }
+                    ],
+                    "samples": [
+                        "set {zone} to {input}"
+                    ]
+                },
+                {
+                    "name": "volumeintent",
+                    "slots": [
+                        {
+                            "name": "updn",
+                            "type": "VOLUME"
+                        },
+                        {
+                            "name": "zone",
+                            "type": "ZONE"
+                        }
+                    ],
+                    "samples": [
+                        "make volume {updn} on {zone}",
+                        "turn volume {updn} in {zone} "
+                    ]
+                },
+                {
+                    "name": "gotointent",
+                    "slots": [
+                        {
+                            "name": "previousnext",
+                            "type": "PREVIOUSNEXT"
+                        },
+                        {
+                            "name": "input",
+                            "type": "INPUT"
+                        }
+                    ],
+                    "samples": [
+                        "go to {previousnext} on {input}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ZONE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "6",
+                                "synonyms": [
+                                    "basement"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "5",
+                                "synonyms": [
+                                    "master bath"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4",
+                                "synonyms": [
+                                    "patio"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2",
+                                "synonyms": [
+                                    "kitchen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1",
+                                "synonyms": [
+                                    "living room"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "INPUT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "6",
+                                "synonyms": [
+                                    "John",
+                                    "six"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "5",
+                                "synonyms": [
+                                    "Glen",
+                                    "five"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4",
+                                "synonyms": [
+                                    "Echo",
+                                    "four"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3",
+                                "synonyms": [
+                                    "TV",
+                                    "three"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2",
+                                "synonyms": [
+                                    "wanpen's music",
+                                    "music",
+                                    "1 pen's music",
+                                    "two"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1",
+                                "synonyms": [
+                                    "a.m. FM",
+                                    "Radio",
+                                    "AM",
+                                    "FM",
+                                    "FM AM"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "VOLUME",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "down",
+                                "synonyms": [
+                                    "stronger",
+                                    "louder",
+                                    "hgher"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "up",
+                                "synonyms": [
+                                    "weaker",
+                                    "softer",
+                                    "lower"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PREVIOUSNEXT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "next",
+                                "synonyms": [
+                                    "the next song",
+                                    "next song",
+                                    "plus"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "previous",
+                                "synonyms": [
+                                    "the previous song",
+                                    "previous song",
+                                    "minus"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
