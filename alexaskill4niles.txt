@@ -1,0 +1,27 @@
+This file provides details into the process for controlling a Nilex GXR2 with voice commands from Alexa.  It uses a Raspberry Pi as the interface between 
+an Alexa skill and the GXR2.  The raspberry pi needs a standard load of raspbian buster with python installed.  Then, the alexaskill.py program needs to 
+be downloaded to the raspberry pi, and nkrok needs to be installed and run in a dedicated terminal session to create a tunnel to the public network for 
+connection to alexa.  An alexa skill needs to be built to allow voice commmands to be passed to the pi.  The JSON file for that script is in a file called 
+pi.json in this directory.
+
+This project requires detailed knowledge over a number of disciplines, and has a medium level of complexity.  If you have no experience writing amazon 
+skills, there is an excellent tutorial that you should complete at the following URL:
+
+              https://tutorials-raspberrypi.com/wp-content/uploads/Eigenen-Raspberry-Pi-Alexa-Skill-entwickeln-und-Pi-fernsteuern-1024x682.jpg
+
+Once you've done that, you'll be ready to attempt this project.  Substitute my pi.json file for his, and my alexaskill.py file for his and you should be in business.
+
+Some interesting facts about the Niles GXR2::
+
+1.  It has its own internal network, complete with DHCP server that issues leases in the range of 10.100.x.x/16.  Therefore, you can't directly connect 
+it to your local area network unless you want to lose connectivity to the Internet.  Fortunately, Raspberry Pi 4s have both wired and wireless connections.  
+Plug the wired port into the Niles GXR2 expansion port and let the GXR2 give it an IP address.  Connect the wireless port to your local area network and let it 
+get its IP address from your local DHCP server.  This will work if you are not also using addresses for your local network that are in the range of 10.100.x.x/16.  
+By the way, there is a detailed paper that explains how to get around this problem on the Internet.  Search for Niles Elan integration.  
+(Please note that https://www.nilesaudio.com/sites/nilesaudio.com/files/_/techsupport/ICS-System-Support/niles-elan_gxr2_ethernet.pdf was a good URL 
+when I was writing these notes)
+
+2.  The 12 RJ45 female connectors for controllers have 12 volts on pins 7 and 8.  Therefore, it is not a good idea to plug anything but controllers into 
+those connectors.  Also pins 4 and 5 are used for infrared connections.  Pins 1 and 2, 3 and 6 are standard Ethernet.  I have some more detailed notes 
+on this in the niles protocol packets file in this directory.
+
