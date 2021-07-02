@@ -32,7 +32,7 @@ def set(zone, input):
     elif(zone=="6" or zone=="basement"):
         zonenum = b"\x26"
 
-    global inputnum
+    global inputnum 
     inputnum = b"\x04"    
     if(input=="1" or input=="a.m. FM"):
         inputnum = b"\x01"
