@@ -125,6 +125,15 @@ def set(updn, zone):
 
     return statement(input + ' selected for ' + zone)
 
+@ask.intent('AMAZON.StopIntent')
+def stop():
+    MESSAGE = b"\x00\x0e\x00\x21\x00\x0b\x61\x06\x0a\x02\xff"
+    UDP_IP = "10.100.0.1"
+    UDP_PORT = 6001
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
+    sock.close()
+    
 @ask.intent('AMAZON.HelpIntent')
 def help():
     speech_text = 'When prompted, say the zone or input that you want to set.  For example set living room to f.m. AM.'
