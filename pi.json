@@ -76,6 +76,14 @@
                     "samples": [
                         "go to {previousnext} on {input}"
                     ]
+                },
+                {
+                    "name": "alloffintent",
+                    "slots": [],
+                    "samples": [
+                        "All off",
+                        "Turn off all zones"
+                    ]
                 }
             ],
             "types": [
