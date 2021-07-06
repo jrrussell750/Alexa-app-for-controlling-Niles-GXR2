@@ -29,7 +29,7 @@
                     "samples": []
                 },
                 {
-                    "name": "setintent",
+                    "name": "setzoneintent",
                     "slots": [
                         {
                             "name": "zone",
@@ -45,11 +45,11 @@
                     ]
                 },
                 {
-                    "name": "volumeintent",
+                    "name": "setvolumeintent",
                     "slots": [
                         {
-                            "name": "updn",
-                            "type": "VOLUME"
+                            "name": "vollevel",
+                            "type": "VOLLEVEL"
                         },
                         {
                             "name": "zone",
@@ -57,8 +57,7 @@
                         }
                     ],
                     "samples": [
-                        "make volume {updn} on {zone}",
-                        "turn volume {updn} in {zone} "
+                        "set volume to {vollevel} in {zone}"
                     ]
                 },
                 {
@@ -251,6 +250,114 @@
                                     "the previous song",
                                     "previous song",
                                     "minus"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ALLOFF",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "alloff",
+                                "synonyms": [
+                                    "Everything off",
+                                    "All zones off",
+                                    "Turn off all zones"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "VOLLEVEL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "10",
+                                "synonyms": [
+                                    "Ten"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "9",
+                                "synonyms": [
+                                    "Nine"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "8",
+                                "synonyms": [
+                                    "Eight"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "7",
+                                "synonyms": [
+                                    "Seven"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "6",
+                                "synonyms": [
+                                    "Six"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "5",
+                                "synonyms": [
+                                    "Five"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4",
+                                "synonyms": [
+                                    "Four"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3",
+                                "synonyms": [
+                                    "Three"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2",
+                                "synonyms": [
+                                    "Two"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1",
+                                "synonyms": [
+                                    "One"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "0",
+                                "synonyms": [
+                                    "Zero"
                                 ]
                             }
                         }
