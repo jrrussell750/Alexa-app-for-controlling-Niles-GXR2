@@ -1,8 +1,8 @@
 This file provides details into the process for controlling a Nilex GXR2 with voice commands from Alexa.  It uses a Raspberry Pi as the interface between 
-an Alexa skill and the GXR2.  The raspberry pi needs a standard load of raspbian buster with python installed.  Then, the alexaskill.py program needs to 
-be downloaded to the raspberry pi, and nkrok needs to be installed and run in a dedicated terminal session to create a tunnel to the public network for 
-connection to alexa.  An alexa skill needs to be built to allow voice commmands to be passed to the pi.  The JSON file for that script is in a file called 
-pi.json in this directory.
+an Alexa skill and the GXR2.  The raspberry pi needs a standard load of raspbian buster with python installed.  Then, the alexaskill.py program from this 
+repository needs to be downloaded to /home/pi directory on the raspberry pi.  The nkrok application needs to be installed and run in a dedicated terminal 
+session to create a tunnel to the public network for connection to alexa.  An alexa skill needs to be built to allow voice commmands to be passed to the pi.  
+A sample JSON file for that script is in a file called pi.json in this repository.
 
 This project requires detailed knowledge over a number of disciplines, and has a medium level of complexity.  If you have no experience writing amazon 
 skills, there is an excellent tutorial that you should complete at the following URL:
