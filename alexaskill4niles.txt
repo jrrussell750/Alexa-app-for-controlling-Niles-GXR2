@@ -64,14 +64,14 @@ l.  Verify that the code runs without errors.  If there are any errors, they are
 
     The raspberry pi needs to commmunicate with alexa over the network.  If you are familiar with networking, you already know that there are many ways to 
     to do this.   If that is the case, you can do this part on your own.  However, if you want a free and easy way to connect, you can use a service offered 
-    by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever".
+    by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever"../ngrok http --domain=multiply-pretty-reindeer.ngrok-free.app 5000
     I suggest you create a free account with them so that you can obtain an auth token that will allow you to stay connected indefinitely.  If you don't have
     the auth token your connection will time out after six hours.
 
 a.  From your web browser, navigate to www.ngrok.com.  The ngrok home page will display.
 b.  Click on the 
 
-./ngrok http --domain=multiply-pretty-reindeer.ngrok-free.app 5000
+./ngrok http 5000
 
 Some interesting facts about the Niles GXR2::
 
