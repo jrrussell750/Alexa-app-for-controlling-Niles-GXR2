@@ -11,9 +11,10 @@ skills, there is an excellent tutorial that you should complete at the following
               
 In case the URL becomes stale, you can find the tutorial by searching for "Develop Your Own Raspberry Pi Alexa Skill and Control Pi Remotely."
               
-Once you've completed the tutorial, you'll be ready to attempt this project.  You will create a skill on the alexa server, then copy and paste the pi.json file 
-from this repository into it.  You'll create a VPN endpoint on the raspberry pi that can be used to communicate with the alexa server, and then download and run 
-the alexaskill.py file from this repository.
+Once you've completed the tutorial, you'll be ready to complete this project.  You will create a skill on the alexa server, then copy and paste the pi.json file 
+from this repository into it.  You will download the alexaskill.py file from this repository and run it on the raspberry pi.  Finally, you'll establish a 
+connection between the raspberrry pi and the amazon web services server.  At that point, you can install your skill using the web or your smart phone and
+control it using any alexa capable device.
 
 1.  Create an alexa skill
 
@@ -40,12 +41,14 @@ h.  Click on the "Copy Skill ID" link under your skill name in the list.  Your S
 i.  Open a text editor on your local machine and paste the Skill ID into it.
 j.  Save the Skill ID file using a name you can remember (something like skillid.txt would work).
 
-2.  Download the alexaskill.py program from this repository to the raspberry pi
+2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
+a.  Log into github and navigate to the Alexa-skill-for-Niles-GXR2 project page.
+b.  locate the alexaskill.py file and 
 
 The purpose of the VPN endpoint is to create a secure connection between the raspberry pi and the amazon web serrvices server.  There are many ways to 
 to do this, so you can use one that you're familiar with.  For this example I'll use ngrok, a vpn service that offers a free option.
 
-1.  Create a free ngroc account
+3.  Create a free ngroc account
 2.  
 
 Some interesting facts about the Niles GXR2::
