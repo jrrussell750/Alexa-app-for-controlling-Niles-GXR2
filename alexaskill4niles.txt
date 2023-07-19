@@ -55,12 +55,14 @@ g.  Open a command line interface and enter the following command:
             pip3 install 'cryptography<2.2'
 h.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
 
-The purpose of the VPN endpoint is to create a secure connection between the raspberry pi and the amazon web serrvices server.  There are many ways to 
-to do this, so you can use one that you're familiar with.  For this example I'll use ngrok, a vpn service that offers a free option.
+3.  Establish a connection between the raspberry pi and amazon web services.  
 
-3.  Create a free ngroc account
-2.  
+    The raspberry pi needs to commmunicate with alexa over the network.  If you are familiar with networking, you already know that there are many ways to 
+    to do this.   If that is the case, you can do this part on your own.  However, if you want a free and easy way to connect, you can use a service offered 
+    by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever".
 
+a.  From your web browser, navigate to www.ngrok.com
+b.  
 Some interesting facts about the Niles GXR2::
 
 1.  It has its own internal network, complete with DHCP server that issues leases in the range of 10.100.x.x/16.  Therefore, you can't directly connect 
