@@ -53,13 +53,20 @@ g.  Open a command line interface and enter the following command:
             python3 -m pip install Flask-Ask
             pip3 install --upgrade setuptools
             pip3 install 'cryptography<2.2'
+            pip3 install Werkzeug==0.9.6
 h.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
+i.  From Thonny, click on "File" and then click on "Open" on the pop-up menu that displays.  The /home/pi directory will display.
+j.  Double click on the alexaskill.py entry to select it.  Thonny will display the source code in the editor.
+k.  Click on the run button to run the code.  The code will run.
+l.  Verify that the code runs without errors.  If there are any errors, they are usually caused by missing or incorrectly loaded python packages.
 
 3.  Establish a connection between the raspberry pi and amazon web services.  
 
     The raspberry pi needs to commmunicate with alexa over the network.  If you are familiar with networking, you already know that there are many ways to 
     to do this.   If that is the case, you can do this part on your own.  However, if you want a free and easy way to connect, you can use a service offered 
     by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever".
+    I suggest you create a free account with them so that you can obtain an auth token that will allow you to stay connected indefinitely.  If you don't have
+    the auth token your connection will time out after six hours.
 
 a.  From your web browser, navigate to www.ngrok.com.  The ngrok home page will display.
 b.  Click on the 
