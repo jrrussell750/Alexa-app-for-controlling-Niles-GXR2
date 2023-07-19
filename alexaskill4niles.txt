@@ -49,9 +49,11 @@ c.  Click on the "Download Raw File" button in the upper right hand corner of th
 d.  Open the file manager on the raspberry pi and navigate to the Downloads directory.
 e.  Move the alexaskill.py file from the Downloads directory to the /home/pi directory.
 f.  Click on the raspberry icon in the upper left-hand corner of the screen and then select Programming from the menu that displays.
-g.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
-h.  
-
+g.  Open a command line interface and enter the following command:
+            python3 -m pip install Flask-Ask
+            pip3 install --upgrade setuptools
+            pip3 install 'cryptography<2.2'
+h.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
 
 The purpose of the VPN endpoint is to create a secure connection between the raspberry pi and the amazon web serrvices server.  There are many ways to 
 to do this, so you can use one that you're familiar with.  For this example I'll use ngrok, a vpn service that offers a free option.
