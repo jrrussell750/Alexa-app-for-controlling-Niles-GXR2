@@ -40,9 +40,13 @@ h.  Click on the "Copy Skill ID" link under your skill name in the list.  Your S
 i.  Open a text editor on your local machine and paste the Skill ID into it.
 j.  Save the Skill ID file using a name you can remember (something like skillid.txt would work).
 
-2.  Create a VPN endpoint
+2.  Download the alexaskill.py program from this repository to the raspberry pi
 
-The purpose of the VPN endpoint is to simplify 
+The purpose of the VPN endpoint is to create a secure connection between the raspberry pi and the amazon web serrvices server.  There are many ways to 
+to do this, so you can use one that you're familiar with.  For this example I'll use ngrok, a vpn service that offers a free option.
+
+1.  Create a free ngroc account
+2.  
 
 Some interesting facts about the Niles GXR2::
 
