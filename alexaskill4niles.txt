@@ -71,7 +71,7 @@ l.  Verify that the code runs without errors.  If there are any errors, they are
 a.  From your web browser, navigate to www.ngrok.com.  The ngrok home page will display.
 b.  Click on the 
 
-
+ngrok http --domain=multiply-pretty-reindeer.ngrok-free.app 80
 
 Some interesting facts about the Niles GXR2::
 
