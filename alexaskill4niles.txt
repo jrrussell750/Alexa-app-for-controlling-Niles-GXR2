@@ -11,7 +11,38 @@ skills, there is an excellent tutorial that you should complete at the following
               
 In case the URL becomes stale, you can find the tutorial by searching for "Develop Your Own Raspberry Pi Alexa Skill and Control Pi Remotely."
               
-Once you've completed the tutorial, you'll be ready to attempt this project.  Copy and paste the pi.json file from this repository into the alexa skill you built, and then download and run the alexaskill.py file from this repository on your raspberry pi.
+Once you've completed the tutorial, you'll be ready to attempt this project.  You will create a skill on the alexa server, then copy and paste the pi.json file 
+from this repository into it.  You'll create a VPN endpoint on the raspberry pi that can be used to communicate with the alexa server, and then download and run 
+the alexaskill.py file from this repository.
+
+1.  Create an alexa skill
+
+In this step, you create an alexa skill on the Amazon Web Services server.  There are several sub-steps to this step, and you need several things to make this work:
+
+An amazon.com account
+At least one Amazon echo device, or a cell phone with the Amazon alexa app installed.
+Internet access
+A device with a Web browser that is powerfull enough to interact with amazon consoles.
+The pi.json file from this repository
+
+a.  Log into the Alexa Skills Kit Developers Console (https://developer.amazon.com/alexa/console/ask).  You will be presented 
+    with the skills menu page.  Please note: You can create an account for the the amazon site during the login process, if you don't
+    already have one.
+b.  Click on "Create Skill".  The "Create New Skill" page will display.
+c.  Enter a name for your skill and verify that "Custom Model" is selected as the model to add to your skill.  Click 
+    on the "Create Skill" button.  Alexa will create your skill.
+d.  Navigate to the JSON editor under Interaction Model in the left menu pane of the console.  Delete the default JSON code
+    in the editor.  
+e.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
+f.  Press the Save button on the json editor to save the code.  
+g.  Go back to the skills menu page.  Your skill should be listed,
+h.  Click on the "Copy Skill ID" link under your skill name in the list.  Your Skill ID will be copied to the clipboard.
+i.  Open a text editor on your local machine and paste the Skill ID into it.
+j.  Save the Skill ID file using a name you can remember (something like skillid.txt would work).
+
+2.  Create a VPN endpoint
+
+The purpose of the VPN endpoint is to simplify 
 
 Some interesting facts about the Niles GXR2::
 
