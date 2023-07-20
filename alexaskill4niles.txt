@@ -44,9 +44,6 @@ d.  Navigate to the JSON editor under Interaction Model in the left menu pane of
 e.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
 f.  Press the Save button on the json editor to save the code.  
 g.  Go back to the skills menu page.  Your skill should be listed,
-h.  Click on the "Copy Skill ID" link under your skill name in the list.  Your Skill ID will be copied to the clipboard.
-i.  Open a text editor on your local machine and paste the Skill ID into it.
-j.  Save the Skill ID file using a name you can remember (something like skillid.txt would work).
 
 2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
 
