@@ -33,8 +33,6 @@ The alexaskill.py file from this repository.
 
 In this step, you create an alexa skill on the Amazon Web Services server.  
 
-
-
 a.  Log into the Alexa Skills Kit Developers Console (https://developer.amazon.com/alexa/console/ask).  You will be presented 
     with the skills menu page.  Please note: You can create an account for the the amazon site during the login process, if you don't
     already have one.
