@@ -99,9 +99,14 @@ h.  Paste the endpoint that was copied from ngrok into the default endpoint text
     of the skill by navigating to the Alexa app on your smartphone and then clicking on the "More" icon at the bottom right-hand corner of your screen.  Select 
     "Skills and Games"" in the list that displays, and then click on the "Your Skills" link at the top of your screen.  Swipe the line of boxes to the left to 
     expose the Dev box and then click on it to select it.  You should see the Niles Pi skill listed below.  If you don't see it, it is probably because you used
-    a different alexa account to create the skill.   
+    a different alexa account to create the skill. If that is the case, re-creating the skill using the correct account should fix the problem.  
 
-a.  
+a.  On your alexa device, try the following commands.  If you have changed your wake word to something other than alexa, substitute your wake word for "alexa" in these
+    commands.
+             Command                      Expected Response
+             alexa open niles pi          Niles pi speaking.  What do you want?
+             set living room to music     Living room is set to music.
+             
 
 Some interesting facts about the Niles GXR2::
 
