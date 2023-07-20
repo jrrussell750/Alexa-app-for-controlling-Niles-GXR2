@@ -64,14 +64,26 @@ l.  Verify that the code runs without errors.  If there are any errors, they are
 
     The raspberry pi needs to commmunicate with alexa over the network.  If you are familiar with networking, you already know that there are many ways to 
     to do this.   If that is the case, you can do this part on your own.  However, if you want a free and easy way to connect, you can use a service offered 
-    by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever"../ngrok http --domain=multiply-pretty-reindeer.ngrok-free.app 5000
+    by ngrok (www.ngrok.com).  They offer a basic tier that works well enough for a personal connection, and ngrok claims that it will be offered "free forever"
     I suggest you create a free account with them so that you can obtain an auth token that will allow you to stay connected indefinitely.  If you don't have
     the auth token your connection will time out after six hours.
 
 a.  From your web browser, navigate to www.ngrok.com.  The ngrok home page will display.
-b.  Click on the 
+b.  Click on the "sign up" button in the upper right-hand corner of the page.  The signup screen will display.
+c.  Enter your name, email address, and a password you want to use in the text boxes provided.  Check the two check boxes and then click on the "Sign up" button.  
+    ngrok will create your account and sign you in and the download ngrok page will display.
+d.  Select the appropriate version 32 or 64 bit ARM) from the list to the right of the "Download" button and then click on the "Download" button.  
+    ngrok will download to the /home/pi/downloads directory.   
+e.  Follow the installation instructions on the download page to install ngrok on the raspberry pi.  Copy and paste the instructions for each step into a command
+    line and run them.  For the last instruction, substitute "5000" for "80" for the port number.  The last instruction creates an endpoint that can be used by 
+    amazon web services to connect to the raspberry pi.
+f.  Locate the secure URL in the output messagess from the last command.  Right click on that URL and select "Copy URL" from the menu that pops up.  The URL will 
+    be saved to the clipboard.
+g.  Open the amazon web services console and navigate to the endpoint page.  A list of endpoints will display.
+h.  Paste the endpoint that was copied from ngrok into the default endpoint text box and then click on the "Save" button at the top right-hand corner of the screen.
+    The alexa skill will be connected to the raspberry pi.
 
-./ngrok http 5000
+4.  Add the skill to the local alexa account.
 
 Some interesting facts about the Niles GXR2::
 
