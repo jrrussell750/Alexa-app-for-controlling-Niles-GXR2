@@ -123,5 +123,6 @@ those connectors.  Also pins 4 and 5 are used for infrared connections.  Pins 1 
 on this in the niles protocol packets file in this directory.
 
 3.  The GXR2 is custom configured with a mix of device cards and database configurations.  If you want to change the configuration, you'll need access to it 
-using an intellisystem 3 interface or equivalent.  There is an excellent blog post at 
+using an intelliFile 3 interface or equivalent.  if you don't have the appropriate equipment and software to configure it, there is an excellent thread at 
+https://www.avsforum.com/threads/hacking-niles-ics-system.1486873/ started by warlockd that explains how to do this.  
 
