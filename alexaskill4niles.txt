@@ -20,8 +20,8 @@ control it using any alexa capable device.
 
 In this step, you create an alexa skill on the Amazon Web Services server.  There are several sub-steps to this step, and you need several things to make this work:
 
-An amazon.com account
 At least one Amazon echo device, or a cell phone with the Amazon alexa app installed.
+The amazon.com account that you are already using to access your alexa app
 Internet access
 A device with a Web browser that is powerfull enough to interact with amazon consoles.
 The pi.json file from this repository
@@ -83,7 +83,15 @@ g.  Open the amazon web services console and navigate to the endpoint page.  A l
 h.  Paste the endpoint that was copied from ngrok into the default endpoint text box and then click on the "Save" button at the top right-hand corner of the screen.
     The alexa skill will be connected to the raspberry pi.
 
-4.  Add the skill to the local alexa account.
+4.  Test your skill.
+
+    By default, your nilespi skill will be accessible from any devices that are registered with the same account used for development  You can verify the presence 
+    of the skill by navigating to the Alexa app on your smartphone and then clicking on the "More" icon at the bottom right-hand corner of your screen.  Select 
+    "Skills and Games"" in the list that displays, and then click on the "Your Skills" link at the top of your screen.  Swipe the line of boxes to the left to 
+    expose the Dev box and then click on it to select it.  You should see the Niles Pi skill listed below.  If you don't see it, it is probably because you used
+    a different alexa account to create the skill.   
+
+a.  
 
 Some interesting facts about the Niles GXR2::
 
