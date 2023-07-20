@@ -18,16 +18,22 @@ Once you've completed the tutorial, you should know enough to get started on thi
 from this repository into it.  You will download the alexaskill.py file from this repository and run it on the raspberry pi.  Finally, you'll establish a 
 connection between the raspberrry pi and the alexa server.  At that point, you can control the GXR2 using any alexa capable device.
 
+To get started you'll need the following:
+A working raspberry pi running a current raspberry pi operating system.
+A working Niles GXR2.
+At least one Amazon echo device.
+A smart phone with the Amazon alexa app installed.
+The amazon.com account that you are already using to access your alexa app.
+Internet access.
+A device with a Web browser that is powerfull enough to interact with amazon consoles.
+The pi.json file from this repository.
+The alexaskill.py file from this repository.
+
 1.  Create an alexa skill
 
 In this step, you create an alexa skill on the Amazon Web Services server.  
 
-To get started you'll need the following:
-At least one Amazon echo device, or a cell phone with the Amazon alexa app installed.
-The amazon.com account that you are already using to access your alexa app
-Internet access
-A device with a Web browser that is powerfull enough to interact with amazon consoles.
-The pi.json file from this repository
+
 
 a.  Log into the Alexa Skills Kit Developers Console (https://developer.amazon.com/alexa/console/ask).  You will be presented 
     with the skills menu page.  Please note: You can create an account for the the amazon site during the login process, if you don't
