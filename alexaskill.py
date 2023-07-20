@@ -24,6 +24,9 @@ def launch():
     return question(speech_text).reprompt(speech_text).simple_card(speech_text)
  
 @ask.intent('setzoneintent', mapping = {'setzone':'setzone'})
+
+# the names in the following function can be edited to match them to the zone and device names in GXR2 
+
 def setzoneintent(zone, input):
     global zonenum
     zonenum = b"\x24"
@@ -31,7 +34,7 @@ def setzoneintent(zone, input):
         zonenum = b"\x21"
     elif(zone=="zone 2" or zone=="kitchen"):
         zonenum = b"\x22"
-    elif(zone=="zone 3"):
+    elif(zone=="zone 3" or zone=="master bath"):
         zonenum = b"\x23"
     elif(zone=="zone 4" or zone=="patio"):
         zonenum = b"\x24"
@@ -39,7 +42,7 @@ def setzoneintent(zone, input):
         zonenum = b"\x25"
     elif(zone=="zone 6" or zone=="basement"):
         zonenum = b"\x26"
-
+ 
     global inputnum 
     inputnum = b"\x04"    
     if(input=="input 1" or input=="a.m. FM"):
@@ -67,6 +70,9 @@ def setzoneintent(zone, input):
     return statement(input + ' selected for ' + zone)
 
 @ask.intent('gotointent', mapping = {'goto':'goto'})
+
+# the names in the following function can be edited to match them to the device names in GXR2 
+
 def prevnext(previousnext, input):
     global navnum
     navnum = b"\x2b"
@@ -100,6 +106,9 @@ def prevnext(previousnext, input):
     return statement(previousnext + ' song has been selected for ' + input)
 
 @ask.intent('setvolumeintent', mapping = {'setvolume':'setvolume'})
+
+# the names in the following function can be edited to match them to the zone names in GXR2 
+
 def setvolume(vollevel, zone):
     global zonenum
     zonenum = b"\x24"
