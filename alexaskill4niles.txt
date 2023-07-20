@@ -101,11 +101,11 @@ h.  Paste the endpoint that was copied from ngrok into the default endpoint text
     expose the Dev box and then click on it to select it.  You should see the Niles Pi skill listed below.  If you don't see it, it is probably because you used
     a different alexa account to create the skill. If that is the case, re-creating the skill using the correct account should fix the problem.  
 
-a.  On your alexa device, try the following commands.  If you have changed your wake word to something other than alexa, substitute your wake word for "alexa" in these
-    commands.
-             Command                      Expected Response
-             alexa open niles pi          Niles pi speaking.  What do you want?
-             set living room to music     Living room is set to music.
+a.  On your alexa device, try the following commands.  If you have changed your wake word to something other than alexa, substitute your wake word for "alexa" in the
+    first of these commands.
+             Command                      Expected Reply                             Action
+             alexa open niles pi          Niles pi speaking.  What do you want?      the niles pi skill opens and is awaiting a command
+             set zone 1 to device 1       Living room is set to music.               device 1 is selected for zone 1
              
 
 Some interesting facts about the Niles GXR2::
@@ -121,4 +121,7 @@ when I was writing these notes)
 2.  The 12 RJ45 female connectors for controllers have 12 volts on pins 7 and 8.  Therefore, it is not a good idea to plug anything but controllers into 
 those connectors.  Also pins 4 and 5 are used for infrared connections.  Pins 1 and 2, 3 and 6 are standard Ethernet.  I have some more detailed notes 
 on this in the niles protocol packets file in this directory.
+
+3.  The GXR2 is custom configured with a mix of device cards and database configurations.  If you want to change the configuration, you'll need access to it 
+using an intellisystem 3 interface or equivalent.  There is an excellent blog post at 
 
