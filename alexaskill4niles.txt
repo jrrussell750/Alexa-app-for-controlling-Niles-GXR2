@@ -38,7 +38,7 @@ a.  Log into the Alexa Skills Kit Developers Console (https://developer.amazon.c
     with the skills menu page.  Please note: You can create an account for the the amazon site during the login process, if you don't
     already have one.
 b.  Click on "Create Skill".  The "Create New Skill" page will display.
-c.  Enter a name for your skill and select "English US" for the locale. Click the "Next" button.  The "Experience, Model, and Hosting 
+c.  Enter "niles pi" as the name for your skill and select "English US" for the locale. Click the "Next" button.  The "Experience, Model, and Hosting 
     service page will display.
 d.  Click on the "Other" radio button to select it.  You will be prompted to select a model.
 e.  Click on "Custom" to select it.  The border around the Custom model will turn blue, indicating that it is selected and you'll be
@@ -53,7 +53,7 @@ i.  Navigate to the JSON editor under Interaction Model in the left menu pane of
 j.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
 k.  Press the Save button on the json editor to save the code.  
 l.  Click the "Build Skill" button in the upper right-hand corner of the screen to rebuild the skill with the new json code.  The builder will run and rebuild the skill.
-l.  Go back to the skills menu page.  Your skill should be listed,
+m.  Go back to the skills menu page.  Your skill should be listed,
 
 2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
 
