@@ -52,6 +52,7 @@ i.  Navigate to the JSON editor under Interaction Model in the left menu pane of
     in the editor.  
 j.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
 k.  Press the Save button on the json editor to save the code.  
+l.  Click the Create Skill button to rebuild the skill with the new json code.  The builder will run and rebuild the skill.
 l.  Go back to the skills menu page.  Your skill should be listed,
 
 2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
