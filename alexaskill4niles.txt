@@ -1,6 +1,6 @@
 This file details the process for controlling a Nilex GXR2 with voice commands from Alexa.  It uses a Raspberry Pi as the interface between 
 an Alexa skill and the GXR2.  The raspberry pi is configured as a GXR2 controller and connected to the expansion port of the GXR2.  Then an alexa skill is
-created to communicate with the raspberry pi.  Alexa voice commands are then used to control the GXR2 zone and input selections, volume levels, power, 
+created to communicate with the raspberry pi.  Alexa voice commands can then be used to control the GXR2 zone and input selections, volume levels, power, 
 and infrared selections.  To make this work, the raspberry pi needs a standard load of the raspberry pi operating system with python3 installed.  
 Then, the alexaskill.py program from this repository needs to be downloaded to /home/pi directory on the raspberry pi.  The ngrok application needs to 
 be installed and run in a dedicated terminal session to create a connection to with the alexa server.  An alexa skill needs to be built to allow voice 
