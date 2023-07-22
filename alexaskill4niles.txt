@@ -57,7 +57,7 @@ g.  Open a command line interface and enter the following command:
             python3 -m pip install Flask-Ask
             pip3 install --upgrade setuptools
             pip3 install 'cryptography<2.2'
-            pip3 install Werkzeug==0.9.6
+            pip3 install Werkzeug==0.16.0
 h.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
 i.  From Thonny, click on "File" and then click on "Open" on the pop-up menu that displays.  The /home/pi directory will display.
 j.  Double click on the alexaskill.py entry to select it.  Thonny will display the source code in the editor.
