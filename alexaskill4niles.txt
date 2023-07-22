@@ -43,15 +43,16 @@ c.  Enter a name for your skill and select "English US" for the locale. Click th
 d.  Click on the "Other" radio button to select it.  You will be prompted to select a model.
 e.  Click on "Custom" to select it.  The border around the Custom model will turn blue, indicating that it is selected and you'll be
     prompted to select a hosting service.
-f.  Click on the "Provision your Own box to select it, and then click on the "Next" button.
-
-f.  verify that "Custom Model" is selected as the model to add to your skill.  Click 
-    on the "Create Skill" button.  Alexa will create your skill.
-g.  Navigate to the JSON editor under Interaction Model in the left menu pane of the console.  Delete the default JSON code
+f.  Click on the "Provision your Own box to select it, and then click on the "Next" button.  The "Templates" screen will display and youll
+    be prompted to select a template.
+g.  Click on the "Start from Scratch" skill to select it and then click on the "Next" button.  The "Review your Selections" sceen will display.
+h.  Review your selection information and then click the "Create Skill" button.  Alexa will create the skill.  After a few minutes, the builder 
+    will terminate.
+i.  Navigate to the JSON editor under Interaction Model in the left menu pane of the console.  Delete the default JSON code
     in the editor.  
-h.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
-i.  Press the Save button on the json editor to save the code.  
-j.  Go back to the skills menu page.  Your skill should be listed,
+j.  Open the pi.json file in this repository.  Copy its contents and paste it into the JSON editor.
+k.  Press the Save button on the json editor to save the code.  
+l.  Go back to the skills menu page.  Your skill should be listed,
 
 2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
 
