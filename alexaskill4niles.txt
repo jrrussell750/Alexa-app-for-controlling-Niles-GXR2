@@ -18,8 +18,13 @@ Once you've completed the tutorial, you should know enough to get started on thi
 from this repository into it.  You will download the alexaskill.py file from this repository and run it on the raspberry pi.  Finally, you'll establish a 
 connection between the raspberrry pi and the alexa server.  At that point, you can control the GXR2 using any alexa capable device.
 
+Please note:  The raspberry pi community is made up of many different contributors.  Therefore it is reasonable to expect that new releases of software will require a break-in 
+period to identify problems with interaction between packages.  These procedures were successfully accomplished using the buster release of the raspberry pi operating system.  
+However, when they were attempted with the bullseye release, they had problems with the cryptography module not loading cleanly.  I expect this to be fixed at some point in 
+the future.  In the mean time, use buster.  
+
 To get started you'll need the following:
-A working raspberry pi running a current raspberry pi operating system.
+A working raspberry pi running the buster release of the raspberry pi operating system.  
 A working Niles GXR2.
 At least one Amazon echo device.
 A smart phone with the Amazon alexa app installed.
@@ -57,23 +62,27 @@ m.  Go back to the skills menu page.  Your skill should be listed,
 
 2.  Download the alexaskill.py program from this repository to the raspberry pi into the /home/pi directory and run it.
 
-a.  From the raspberry pi, log into github and navigate to the Alexa-skill-for-Niles-GXR2 project page.
-b.  locate the alexaskill.py file in the list of files and double click on it to open it.
-c.  Click on the "Download Raw File" button in the upper right hand corner of the screen.  The file will download to the "Downloads" directory.
+a.  From the raspberry pi, use the web browser to log into www.github.com.  The github home page will display.
+b.  Enter "Alexa-skill-for-Niles-GXR2" in the searcy text box and press Enter.  A link to the Alexa-skill-forNiles-GXR2 repository will display.
+c.  Click on the link to select it.  The page for the repository will display.
+d.  Click on the "Code" button (green button above and to the right of the file list) and then click on Download ZIP on the pop-up menu that displays.  
+    The zip file will download to the "Downloads" directory on the raspberry pi.
 d.  Open the file manager on the raspberry pi and navigate to the Downloads directory.
-e.  Move the alexaskill.py file from the Downloads directory to the /home/pi directory.
-f.  Click on the raspberry icon in the upper left-hand corner of the screen and then select Programming from the menu that displays.
-g.  Open a command line interface and enter the following command:
+e.  Double click on the Alexa-skill-for-Niles-GXR2-main.zip file.  The xarchiver pop-up menu will display.
+f.  Click on the Extract files icon (icon with a yellow arrow pointing to the right.) The Extract files dialog box will dispyay.
+g.  Enter "/home/pi" in the "Extract to:  text box" and then verify that the "All files" radio button is selected and all the check boxes are un-checked.  Click on the "Extract"  button.  
+    The files will be extracted to the "Alexa-skill-for-Niles-GXR2-main" directory.
+h.  Navigate to that directory and then copy the "alexaskill.py" and "getstatus.cpp" files to the /home/pi directory.
+i.  Open a command line interface and enter each of the following commands separately:
             python3 -m pip install Flask-Ask
             pip3 install --upgrade setuptools
             pip3 install 'cryptography<2.2'
             pip3 install Werkzeug==0.16.0
-h.  From the programming menu, click on Thonny to select it. The Thonny development environment will display.
-i.  From Thonny, click on "File" and then click on "Open" on the pop-up menu that displays.  The /home/pi directory will display.
-j.  Double click on the alexaskill.py entry to select it.  Thonny will display the source code in the editor.
-
-k.  Click on the run button to run the code.  The code will run.
-l.  Verify that the code runs without errors.  If there are any errors, they are usually caused by missing or incorrectly loaded python packages.
+            g++ getstatus.cpp
+            ./a.out
+j.  Open a new command line interface and enter the following command:
+            python3 alexaskill.py
+Please note that all of these commands should run without errors.  If there are errors check for typos in the commands by using the up arrow in the command line interfaces to review them.
 
 3.  Establish a connection between the raspberry pi and amazon web services.  
 
