@@ -83,6 +83,7 @@ i.  Open a command line interface and enter each of the following commands separ
 j.  Open a new command line interface and enter the following command:
             python3 alexaskill.py
 Please note that all of these commands should run without errors.  If there are errors check for typos in the commands by using the up arrow in the command line interfaces to review them.
+k.  Leave all command line interface screens open.  This will make sure that the alexaskill.py and the getstatus.cpp programs continue to run.
 
 3.  Establish a connection between the raspberry pi and amazon web services.  
 
@@ -96,11 +97,11 @@ a.  From your web browser, navigate to www.ngrok.com.  The ngrok home page will 
 b.  Click on the "sign up" button in the upper right-hand corner of the page.  The signup screen will display.
 c.  Enter your name, email address, and a password you want to use in the text boxes provided.  Check the two check boxes and then click on the "Sign up" button.  
     ngrok will create your account and sign you in and the download ngrok page will display.
-d.  Select the appropriate version 32 or 64 bit ARM) from the list to the right of the "Download" button and then click on the "Download" button.  
+d.  Select the 32 bit ARM version from the list to the right of the "Download" button and then click on the "Download" button.  
     ngrok will download to the /home/pi/downloads directory.   
-e.  Follow the installation instructions on the download page to install ngrok on the raspberry pi.  Copy and paste the instructions for each step into a command
-    line and run them.  For the last instruction, substitute "5000" for "80" for the port number.  The last instruction creates an endpoint that can be used by 
-    amazon web services to connect to the raspberry pi.
+e.  Open a new command line interface and then follow the installation instructions on the ngrok download page to install ngrok on the raspberry pi.  This
+    can be easily done by copying and pasting the instructions for each step into the command line and running them.  For the last instruction, substitute 
+    "5000" for "80" for the port number.  The last instruction creates an endpoint that can be used by amazon web services to connect to the raspberry pi.
 f.  Locate the secure URL in the output messagess from the last command.  Right click on that URL and select "Copy URL" from the menu that pops up.  The URL will 
     be saved to the clipboard.
 g.  Open the amazon web services console and navigate to the endpoint page.  A list of endpoints will display.
